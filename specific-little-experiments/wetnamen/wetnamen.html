@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="utf-8"/>
+ <title>Search in dutch law names</title>
+ <script async type="text/javascript" src="/wetnamen.js?7"></script>
+ <style type="text/css">
+   html, body         { height:100%; width:100%;  margin:0; border:0; }
+   body               { background-color:#6c5eb5; }
+   .search_box        { position:fixed; top:0; width:100%; }
+   .search_box input  { width:100%; padding:6px .4em; box-sizing:border-box;  height:2em;  background-color:white; color:black; border:0px; vertical-align:middle; font-size:x-large;  }
+   #results_table     { width:100%; min-height:10em; margin-top:3.5em; padding-bottom:5em; }
+   tr                 { border-bottom: 1px solid #6666; font-size:large}
+   td                 { padding-left:0.5em; padding-bottom:.39em; padding-right:0.5em; vertical-align: top;}
+   td:first-child     { width:10em; }
+   .gray              { color:#1f1f1f; }
+   a                  { color:black;   }
+ </style>
+ <script type="text/javascript">
+    function substring_and_match_i(haystack, needles) { // does haystack contain all of the needles list as substrings?
+        haystack = haystack.toLowerCase();
+        for (let needle of needles) {
+            needle = needle.toLowerCase();
+            if (haystack.indexOf(needle) == -1) return false;
+        }
+        return true;
+    }
+
+    function table_message(msg) {   document.getElementById('results_table').innerHTML = '<tr><td>'+msg+'</td></tr>';    }
+
+    function clear_results()    {   document.getElementById('results_table').innerHTML = '';                             }
+
+    function reduce_scores(scores) {
+        //return Math.max(...scores);
+        // max plus a little extra from further string matches in an item:
+        let sorts = scores.sort().reverse();
+        let ret=sorts.shift(), wgt = 1.0;
+        while (sorts.length>0) {
+            wgt *= 0.4; //this controls how much to value additional matches within the same item - more is more, less is mostly for triebreakers
+            ret += wgt*sorts.shift();
+        }
+        return ret;
+    }
+
+    function do_search(searchq) {
+        /* searches for a query in data that is (currently) expected to be 
+           a list of (identifier, [better names], [fuzzier names])
+        */ 
+        if (namedata == null) { table_message('name data not yet loaded'); return; }
+
+        console.log( 'do_search('+searchq+')' );
+        search_requests = [];
+        searchq = searchq.trim();
+        if (searchq.length == 0) {
+            clear_results();
+        } else if (searchq.length >= 2) { // not that we couldn't, but the results rarely make sense
+            let start_time = performance.now();
+            const searchql = searchq.split(/\s+/);
+            let results_table = document.getElementById('results_table');
+            clear_results();
+            const /*match_sub = new RegExp(searchq, 'i'), */ match_with_edges = RegExp('\\b'+searchq+'\\b', 'i'), match_at_start = RegExp('\\b'+searchq, 'i');
+            let hits = []; // list of  (score, (bwbr, selfnames, othernames))
+
+            function score_str(s) { /* for sorting by seemingly closer matches */
+                let score=0.1; /* fallback */
+                if      ( s.toLowerCase() == searchq.toLowerCase() )  score += 1.5; /* for perfectly matching names - and also acronyms alternatives */
+                else if ( match_with_edges.test( s ) )                score += 0.9;
+                else if ( match_at_start.test( s ) )                  score += 0.7;
+                else    /*arbitrary substring*/                       score += 0.5; 
+                return score;
+            }
+
+            for (const row of namedata) {
+                [bwbr, selfnames, othernames] = row;
+                let matched=false, scores=[];
+                for (const selfname of selfnames)      {  
+                    if (substring_and_match_i( selfname, searchql )) { 
+                        matched=true;
+                        scores.push( score_str(selfname) );
+                    }
+                }
+                for (const othername of othernames) {
+                    if (substring_and_match_i( othername, searchql )) {
+                        matched=true;
+                        scores.push( 0.9*score_str(othername) );
+                    }  
+                }
+
+                if (matched) {
+                    //console.log( bwbr, scores );
+                    hits.push( [reduce_scores(scores), row] );
+                }
+            }
+            let search_ms = performance.now() - start_time;
+            console.log('  calculation took '+search_ms+'ms');
+
+            /* Make table from hits */
+            start_time = performance.now();
+            hits = hits.sort( (a, b) => b[0]-a[0] ); // descending score
+            for (const [score, row] of hits) {
+                [bwbr, selfnames, othernames] = row;
+                let tr = document.createElement('tr');
+
+                let bwb_td = document.createElement('td');
+                let a = document.createElement('a');
+                a.href='https://wetten.overheid.nl/'+bwbr;
+                a.target='_blank';
+                a.appendChild( document.createTextNode(bwbr) );
+                bwb_td.appendChild( a );
+                tr.appendChild(bwb_td);
+
+                //let score_td = document.createElement('td'); score_td.appendChild( document.createTextNode( score.toFixed(3) ) ); tr.appendChild(score_td);
+
+                let names_td = document.createElement('td');
+                for (const selfname of selfnames) {
+                    names_td.appendChild( document.createTextNode( selfname ) );
+                    names_td.appendChild( document.createElement( 'br' ) );
+                }
+                if (othernames.length>0) {
+                    let gray = document.createElement('div')
+                    gray.className = "gray";
+                    for (const selfname of othernames) {
+                        gray.appendChild( document.createTextNode( selfname ) );
+                        gray.appendChild( document.createElement( 'br' ) );
+                    }
+                    names_td.append(gray);
+                }
+                tr.appendChild(names_td);
+
+                results_table.appendChild(tr);
+            }
+            if (0) {
+                let tr = document.createElement('tr');
+                tr.appendChild( document.createElement('td') )
+                let restd = document.createElement('td');
+                restd.appendChild( document.createTextNode(''+hits.length+' results  in '+search_ms+'ms') );
+                tr.appendChild(restd);
+                results_table.appendChild(tr);
+            }
+            window.scrollTo(0, 0); // in case you scropped down previouesly
+            end_time = performance.now();
+            console.log('  table took '+(end_time-start_time)+'ms')
+        }
+    }
+
+    let stabletime_ms = 150,
+        last_search = '',  
+        search_hist = []; // (time, str) 
+    function search_watcher() { 
+        /* because the matching still takes a few dozen milliseconds, avoid searching while typing 
+           This is somewhat overcomplicated because 
+           - it was written for XHR fetches where you might also want to cancel those. 
+           - it's robust to having only the timer and not the keyboard handler
+        */
+        let curstr = document.getElementById('search').value.trim();
+        if (curstr != last_search) { // you changed he value since we last calculated results
+            // to see whether you stopped typing, we track recent values of the search field  (which is why we need that timer)
+            let now = Date.now();
+            search_hist.push( {s:curstr, time:now} );  // (so oldest at the left)
+            let newestitem = search_hist[search_hist.length-1]
+            if ((search_hist.length>=1) && (search_hist[0].s != newestitem.s)) { // newest isn't oldest - value changed
+                while (search_hist[0].s != newestitem.s)  search_hist.shift();  // take off old different values
+            }
+            // all items the same, spanning more than the time we wanted
+            if ((search_hist.length >= 2)  &&  ( search_hist[0].s == newestitem.s)  &&  ((newestitem.time - search_hist[0].time) > stabletime_ms) ) {  // same throughout,  for at least our interval time
+                //console.log('search value constant for '+(newestitem.time - oldestitem.time)+'ms');
+                location.hash = curstr;   // mirror current field/search in URL. On a test because browsers are suspictious about you changing this frequently 
+                last_search = curstr;     // so that this logic won't trigger again until you change the field value
+                if (curstr.trim().length<=1) // don't search for single letter
+                    clear_results();
+                else
+                    do_search(curstr);
+                search_hist = []; // not strictly necessary, but it can stay empty until we type next
+            }
+            while ( (search_hist.length>0)  &&  (now-search_hist[0].time>1.5*stabletime_ms) )
+                search_hist.shift(); // takes from start
+        }
+    }
+
+    let namedata = null;
+
+    function register_load_completes() {
+        let search_elem = document.getElementById('search'); 
+        setInterval(search_watcher, 25);
+        search_elem.addEventListener('keyup', search_watcher);
+        search_elem.value = decodeURI( window.location.hash.substr(1) );
+    }
+
+    document.onload = function() {
+       table_message( 'Loading name data...');
+    }
+
+    window.onload = function() {
+        /* TODO: change this back to loading from a .js so it'll save-as properly */
+        register_load_completes();    
+        /*
+        table_message( 'Loading name data...');
+        fetch('./wetnames.json?3')
+        .then((response) => response.json())
+        .then( function(json) {
+            namedata=json; 
+            clear_results(); 
+            register_load_completes();
+        } );
+        */
+    }
+ </script>
+</head>
+<body>
+  <div id="outer">
+    <div class="searchdiv">
+      <div class="search_box"><input id="search" placeholder="search"/></div>
+      <div class="search_res"><table id="results_table"></table></div>
+    </div>
+  </div>
+</body>
+</html>
