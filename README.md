@@ -15,6 +15,13 @@ primarily yet not only some example datasets we provide.
 ### `research-methods`
 The `research-methods` folder contains examples of how to use existing NLP libraries.
 
+
+### `specific-experiments`
+The `specific-experiments` are some little projects
+that are not centrally important but which you may find interesting, 
+such as finding legal references in documents,
+poking at specific documents structure in detail.
+
 ## License
 
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
