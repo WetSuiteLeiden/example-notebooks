@@ -7,8 +7,10 @@ to use the code provided by WetSuite and others to help you leverage NLP tools i
 
 ## What can I find here?
 
-### `datasets`
-In the `datasets` folder, you can find examples of how to interact with possible existing legal datasets.
+### `datasets-use`
+In the `datasets-use` folder, you can find examples of how to interact with possible existing legal datasets,
+primarily yet not only some example datasets we provide.
+
 
 ### `research-methods`
 The `research-methods` folder contains examples of how to use existing NLP libraries.
