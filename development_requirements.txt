@@ -1,0 +1,6 @@
+pylint
+mypy
+black
+black[jupyter]
+
+-r requirements.txt
