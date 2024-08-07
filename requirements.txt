@@ -1,0 +1,2 @@
+wetsuite>=0.2.1
+notebook>=7.2.1
