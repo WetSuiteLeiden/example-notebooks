@@ -5,6 +5,11 @@ to use the code provided by WetSuite and others to help you leverage NLP tools i
 
 ## What is WetSuite?
 
+## Where should I start?
+
+Start with our curated [crash course](wetsuite-nlp-crash-course/README.md)! This small crash course 
+aims to get anyone started with deploying NLP-based tools to research governmental documents.
+
 ## What can I find here?
 
 ### `datasets-use`
