@@ -8,8 +8,8 @@ However, you must be open to try and learn new things!
 
 # What will I learn in the crash course?
 
-- Part 0: How to run Python code in Jupyter Notebooks, either online or on your local computer.
-- Part 1: How to use the `wetsuite` Python library to access sample datasets.
+- Part 1: How to run Python code in Jupyter Notebooks, either online or on your local computer.
+- Part 2: How to use the `wetsuite` Python library to access sample datasets.
 
 # What do I need to have or know before I can start on the crash course?
 First of all, you need to have access to a computer with internet access.
