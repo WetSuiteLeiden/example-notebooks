@@ -14,7 +14,7 @@ aims to get anyone started with deploying NLP-based tools to research government
 
 ### `wetsuite-nlp-crash-course`
 
-### `geting-started`
+### `geting-started-technically`
 
 ### `datasets-use`
 Examples of how to interact with legal datasets, primarily yet not only example datasets that we provide.
