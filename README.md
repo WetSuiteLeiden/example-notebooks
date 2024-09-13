@@ -12,9 +12,12 @@ aims to get anyone started with deploying NLP-based tools to research government
 
 ## What can I find here?
 
+### `wetsuite-nlp-crash-course`
+
+### `geting-started`
+
 ### `datasets-use`
-Examples of how to interact with some of the existing legal datasets,
-primarily yet not only example datasets that we provide.
+Examples of how to interact with legal datasets, primarily yet not only example datasets that we provide.
 
 ### `research-methods`
 Examples of how to do certain text analysis, sych s how to use existing NLP libraries.
@@ -24,8 +27,6 @@ Some little projects that are not centrally important,
 or examples of methods, but which you may nonetheless find interesting, 
 such as finding legal references in documents,
 poking at specific documents structure in detail.
-
-### `wetsuite-nlp-crash-course`
 
 ## License
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
