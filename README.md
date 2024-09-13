@@ -25,5 +25,7 @@ or examples of methods, but which you may nonetheless find interesting,
 such as finding legal references in documents,
 poking at specific documents structure in detail.
 
+### `wetsuite-nlp-crash-course`
+
 ## License
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
