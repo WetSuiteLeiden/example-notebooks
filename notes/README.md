@@ -23,5 +23,3 @@ This explains why we did, and how to use it.
 ## notes__potential_data
 
 TO BE REMOVED, the wetsuite site has a more complete and more detailed list
-
-
