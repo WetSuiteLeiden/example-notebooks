@@ -1,1 +1,91 @@
+## Summary before you dive in
 
+
+### Using NLP libraries
+
+NLP libraries exist to make mechanical processing of text easier,
+often by splitting things into smaller tasks and assisting each of them.
+
+There are many such libraries, and each has its own way of doing things.
+We give some intrduction, and a number of examples in the one we use for these notebooks, spacy.
+
+See
+- [methods_nlp__intro_and_nlp_libraries](methods_nlp__intro_and_nlp_libraries.ipynb)
+- [methods_nlp__spacy_basics](methods_nlp__spacy_basics.ipynb)
+
+
+### Terms and phrases
+
+#### Spacy pattern matcher
+
+Spacy pattern matcher lets you find things by patterns conceptually like "NUMBER WORD NUMBER", "ADJECTVE NOUN", "uitspraak".
+
+This may be most interesting to try to find very specific - and for the same reason will miss anything not matching exactly;
+the following notebook in part eases getting started, and in part illustrates how this can be limited to match
+longer matterns, because it turns out that humans are creative with their wording even within dry normative legal text.
+
+See [methods_nlp__terms_spacy](methods_nlp__terms_spacy.ipynb)
+
+
+#### Notes on tf-idf
+
+Just counting words will quickly get disproportionate,
+because in any almost language, most of the most common words are also least interesting,
+being  empty function words like 'de', 'van' and 'dan'. 
+
+Those are ignorable as stopwords, but what about words that in more specific context are just everywhere?
+What about those that may be ubiquitous in one document set but not another?
+Consider 'uitspraak', 'college', 'aanvraag', 'artikel'.
+
+It's fine if you skim over this one, because it is central to anything - 
+tf-idf is not a complete solution, it's more about recognizing how discounting words has 
+value within other methods.
+
+See the [methods_nlp_terms_tfidf notebook](methods_nlp_terms_tfidf.ipynb)
+
+
+#### Collocations
+
+Collocations are about finding words that are next to each other more than just chance.
+
+Linguists may use it towards specific goals, perhaps "what verbs do we use with this noun, what adverb with this adjective?",
+
+Collocation _analysis_ often refers to relatively basic statistics finding such unusually common combinations. 
+It can be an ingredient in more specific goals or, like in the examples below, a less constrained one,
+which may find anything from language-wider patterns like "in termen van", 
+intentional phrases like "eigen gebruik",
+parts of common phrasing in specific contexts like "indien de verhuurder",
+and generally _fragments_ of phrases, "tijdstip zal", "verplichtingen uit", "heeft gedaan", and more. 
+
+See [methods_nlp__terms_collocations](methods_nlp__terms_collocations.ipynb)
+
+
+#### Topic modelling
+
+While topic modelling is often aimed at splitting a document set into things of different topics,
+its focus on finding the terms that distingish them often makes it interesting to stop short of that:
+do the analysis, and then inspect the words and phrases it _would_ use.
+
+See [methods_nlp__topic_modeling](methods_nlp__terms_spacy.ipynb)
+
+
+
+### Learning tasks
+
+#### Named entities
+
+methods_nlp__spacy_training_ner.ipynb
+
+#### Categorizing text 
+
+methods_nlp__spacy_training_categorizing.ipynb
+
+
+
+### Extracting text _to_ analyse
+
+#### PDF extraction; OCRing PDFs where necessary
+
+See 
+- [methods_technical__pdf_part1__extract_or_ocr](methods_technical__pdf_part1__extract_or_ocr.ipynb)
+- [methods_technical__pdf_part2__more_extraction](methods_technical__pdf_part2__more_extraction.ipynb)
