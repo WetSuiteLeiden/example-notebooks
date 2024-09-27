@@ -18,17 +18,22 @@ aims to get anyone started with deploying NLP-based tools to research government
 ### [`geting-started-technically`](geting-started-technically)
 Addresses some of the more technical, computery questions you may have while starting your own programming projects.
 
-### [`datasets-use`](datasets-use)
-Examples of how to interact with legal datasets, primarily yet not only example datasets that we provide.
 
 ### [`research-methods`](research-methods)
 Examples of how to do certain text analysis, sych s how to use existing NLP libraries.
+
+
+### [`datasets-use`](datasets-use)
+Examples of how to interact with legal datasets, primarily those we provide,
+so that you can see what happens when you start analysing real data.
+
 
 ### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
 or examples of methods, but which you may nonetheless find interesting, 
 such as finding legal references in documents,
 poking at specific documents structure in detail.
+
 
 ## License
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
