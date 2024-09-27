@@ -12,19 +12,19 @@ aims to get anyone started with deploying NLP-based tools to research government
 
 ## What can I find here?
 
-### `wetsuite-nlp-crash-course`
+### [`wetsuite-nlp-crash-course`](wetsuite-nlp-crash-course)
 
 
-### `geting-started-technically`
+### [`geting-started-technically`](geting-started-technically)
 Addresses some of the more technical, computery questions you may have while starting your own programming projects.
 
-### `datasets-use`
+### [`datasets-use`](datasets-use)
 Examples of how to interact with legal datasets, primarily yet not only example datasets that we provide.
 
-### `research-methods`
+### [`research-methods`](research-methods)
 Examples of how to do certain text analysis, sych s how to use existing NLP libraries.
 
-### `specific-experiments`
+### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
 or examples of methods, but which you may nonetheless find interesting, 
 such as finding legal references in documents,
