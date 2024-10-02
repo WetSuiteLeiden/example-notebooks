@@ -33,7 +33,7 @@ to show what dealing with data might look like, such as:
 ### [`research-methods`](research-methods)
 Examples of how to do certain (tex)t analyses, such as 
  - how to use existing NLP libraries on bare text
- - how to get text out of more and less cooperative PDFs
+ - how to get text out of more and less cooperative PDFs - direct extraction and OCR
  - how to extract interesting information
  - how to extract interesting phrases
  - how to group similar documents
