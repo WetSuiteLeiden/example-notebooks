@@ -1,6 +1,6 @@
 # Notebooks
 
-Here are some notebooks that focus on loading data and moving on to do something useful with it.
+These are notebook focused on loading data and moving on to do something useful with it.
 
 - [dataset_intro_by_doing__bwb__extract_definitions](dataset_intro_by_doing__bwb__extract_definitions.ipynb) - loads the `bwb-mostrecent-xml` dataset, finds the section with the definition lists, tries to pick items from it 
 
