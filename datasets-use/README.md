@@ -1,1 +1,19 @@
 
+- [dataset_intro_by_doing__bwb__extract_definitions](dataset_intro_by_doing__bwb__extract_definitions.ipynb)
+- [dataset_intro_by_doing__cvdr__docstructure_part1_inspect](dataset_intro_by_doing__cvdr__docstructure_part1_inspect.ipynb)
+- [dataset_intro_by_doing__cvdr__docstructure_part2_use](dataset_intro_by_doing__cvdr__docstructure_part2_use.ipynb)
+
+- [dataset_intro_by_doing__internetconsultaties](dataset_intro_by_doing__internetconsultaties.ipynb)
+- [dataset_intro_by_doing__kamervragen__(stats_example)](dataset_intro_by_doing__kamervragen__(stats_example).ipynb)
+- [dataset_intro_by_doing__kansspelautoriteit](dataset_intro_by_doing__kansspelautoriteit.ipynb)
+- [dataset_intro_by_doing__op_parliament](dataset_intro_by_doing__op_parliament.ipynb)
+- [dataset_intro_by_doing__rechtspraaknl__(stats_example)](dataset_intro_by_doing__rechtspraaknl__(stats_example).ipynb)
+- [dataset_intro_by_doing__rechtspraaknl_raw](dataset_intro_by_doing__rechtspraaknl_raw.ipynb)
+- [dataset_intro_by_doing__woobesluit](dataset_intro_by_doing__woobesluit.ipynb)
+
+
+- [huurcommissie](huurcommissie.ipynb)
+
+- [dataset_intro_by_doing__gemeentes](dataset_intro_by_doing__gemeentes.ipynb)
+
+- [search_sru_cvdr_damocles](search_sru_cvdr_damocles.ipynb)
