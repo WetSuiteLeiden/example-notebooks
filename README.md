@@ -30,8 +30,11 @@ Examples of how to do certain text analysis, such as
 
 ### [`datasets-use`](datasets-use)
 Primarily some "load a dataset we provide, start doing something with it",
-to show what kind of thing you get when analysing real data.
-
+to show what dealing with data might look like, such as:
+- try to extract definition lists that are used in laws
+- look at the structure of CVDR documents, and extract text _while retaining information about where it came from_ 
+- try to extract information from kansspelautoriteit text
+- try to extract just the "this is what we decided and how" from responses to Woo requests
 
 ### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
