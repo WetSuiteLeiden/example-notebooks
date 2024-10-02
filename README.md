@@ -20,19 +20,25 @@ Addresses some of the more technical, computery questions you may have while sta
 
 
 ### [`research-methods`](research-methods)
-Examples of how to do certain text analysis, sych s how to use existing NLP libraries.
+Examples of how to do certain text analysis, such as 
+ - how to use existing NLP libraries on bare text
+ - how to get text out of more and less cooperative PDFs
+ - how to extract interesting information
+ - how to extract interesting phrases
+ - how to group similar documents
 
 
 ### [`datasets-use`](datasets-use)
-Examples of how to interact with legal datasets, primarily those we provide,
-so that you can see what happens when you start analysing real data.
+Primarily some "load a dataset we provide, start doing something with it",
+to show what kind of thing you get when analysing real data.
 
 
 ### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
-or examples of methods, but which you may nonetheless find interesting, 
-such as finding legal references in documents,
-poking at specific documents structure in detail.
+or examples of methods, 
+but which you may nonetheless find interesting, 
+such as inspecting documents structure in more detail,
+or finding legal references in documents.
 
 
 ## License
