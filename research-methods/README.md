@@ -86,9 +86,10 @@ See [methods_nlp__terms_collocations](methods_nlp__terms_collocations.ipynb)
 
 #### Topic modelling
 
-While topic modelling is often aimed at splitting a document set into things of different topics,
-its focus on finding the terms that distingish them often makes it interesting to stop short of that:
-do the analysis, and then inspect the words and phrases it _would_ use.
+While topic modelling is often aimed at the question 
+"what sets of words or phrases seem to join and disinguish documents in a set",
+if we ignore the last bit that does that splitting, 
+we can inspect the words and phrases it _would_ use.
 
 See [methods_nlp__topic_modeling](methods_nlp__terms_spacy.ipynb)
 
@@ -98,12 +99,11 @@ See [methods_nlp__topic_modeling](methods_nlp__terms_spacy.ipynb)
 
 #### Named entities
 
-methods_nlp__spacy_training_ner.ipynb
+See: [methods_nlp__spacy_training_ner](methods_nlp__spacy_training_ner.ipynb)
 
 #### Categorizing text 
 
-methods_nlp__spacy_training_categorizing.ipynb
-
+See: [methods_nlp__spacy_training_categorizing](methods_nlp__spacy_training_categorizing.ipynb)
 
 
 ### Extracting text _to_ analyse
