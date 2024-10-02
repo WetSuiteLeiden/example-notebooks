@@ -1,3 +1,7 @@
+# Notebooks
+
+Here are some notebooks that focus on loading data and moving on to do something useful with it.
+
 - [dataset_intro_by_doing__bwb__extract_definitions](dataset_intro_by_doing__bwb__extract_definitions.ipynb) - loads the `bwb-mostrecent-xml` dataset, finds the section with the definition lists, tries to pick items from it 
 
 - [dataset_intro_by_doing__cvdr__docstructure_part1_inspect](dataset_intro_by_doing__cvdr__docstructure_part1_inspect.ipynb) - loads the `cvdr-mostrecent-xml` dataset, inspects the structure, preparing for...
