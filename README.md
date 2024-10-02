@@ -54,7 +54,7 @@ Some more technical notes, e.g.
 - more specific details about the structure of certain legal identifiers and references
 - some legal jargon that may be new to linguists; some linguist jargon that may be new to legal students
 - some introduction to XML files
-- some notes on why we provide a 'put files in a datbase-in-a-file' and use it for datasets and throughout examples
+- some notes on why we provide a 'put files in a datbase-in-a-file' and use it for datasets and in varied examples
 
 
 ## License
