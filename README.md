@@ -20,13 +20,6 @@ Addresses some of the more technical, computery questions you may have while sta
  - how do I install this
  - how do I maybe experiment with this _without_ installing anything (a.k.a. 'what are notebooks'
 
-### [`research-methods`](research-methods)
-Examples of how to do certain text analysis, such as 
- - how to use existing NLP libraries on bare text
- - how to get text out of more and less cooperative PDFs
- - how to extract interesting information
- - how to extract interesting phrases
- - how to group similar documents
 
 ### [`datasets-use`](datasets-use)
 Primarily some "load a dataset we provide, start doing something with it",
@@ -35,6 +28,16 @@ to show what dealing with data might look like, such as:
 - look at the structure of CVDR documents, and extract text _while retaining information about where it came from_ 
 - try to extract information from kansspelautoriteit text
 - try to extract just the "this is what we decided and how" from responses to Woo requests
+
+
+### [`research-methods`](research-methods)
+Examples of how to do certain (tex)t analyses, such as 
+ - how to use existing NLP libraries on bare text
+ - how to get text out of more and less cooperative PDFs
+ - how to extract interesting information
+ - how to extract interesting phrases
+ - how to group similar documents
+
 
 ### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
