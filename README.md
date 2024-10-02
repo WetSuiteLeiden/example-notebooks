@@ -49,5 +49,13 @@ such as
 - how do I find legal references in documents
 
 
+### [`notes`](notes)
+Some more technical notes, e.g.
+- more specific details about the structure of certain legal identifiers and references
+- some legal jargon that may be new to linguists; some linguist jargon that may be new to legal students
+- some introduction to XML files
+- some notes on why we provide a 'put files in a datbase-in-a-file' and use it for datasets and throughout examples
+
+
 ## License
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
