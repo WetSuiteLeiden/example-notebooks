@@ -15,18 +15,11 @@ aims to get anyone started with deploying NLP-based tools to research government
 ### [`wetsuite-nlp-crash-course`](wetsuite-nlp-crash-course)
 
 
-### [`geting-started-technically`](geting-started-technically)
+### [`getting-started-technically`](getting-started-technically)
 Addresses some of the more technical, computery questions you may have while starting your own programming projects, such as
  - how do I install this
  - how do I maybe experiment with this _without_ installing anything (a.k.a. 'what are notebooks'
 
-### [`research-methods`](research-methods)
-Examples of how to do certain text analysis, such as 
- - how to use existing NLP libraries on bare text
- - how to get text out of more and less cooperative PDFs
- - how to extract interesting information
- - how to extract interesting phrases
- - how to group similar documents
 
 ### [`datasets-use`](datasets-use)
 Primarily some "load a dataset we provide, start doing something with it",
@@ -36,6 +29,16 @@ to show what dealing with data might look like, such as:
 - try to extract information from kansspelautoriteit text
 - try to extract just the "this is what we decided and how" from responses to Woo requests
 
+
+### [`research-methods`](research-methods)
+Examples of how to do certain (tex)t analyses, such as 
+ - how to use existing NLP libraries on bare text
+ - how to get text out of more and less cooperative PDFs - direct extraction and OCR
+ - how to extract interesting information
+ - how to extract interesting phrases
+ - how to group similar documents
+
+
 ### [`specific-experiments`](specific-experiments)
 Some little projects that are not centrally important,
 or examples of methods, 
@@ -44,6 +47,14 @@ such as
 - inspecting documents structure in more detail
 - how do I split up existing documents into parts
 - how do I find legal references in documents
+
+
+### [`notes`](notes)
+Some more technical notes, e.g.
+- more specific details about the structure of certain legal identifiers and references
+- some legal jargon that may be new to linguists; some linguist jargon that may be new to legal students
+- some introduction to XML files
+- some notes on why we provide a 'put files in a datbase-in-a-file' and use it for datasets and in varied examples
 
 
 ## License
