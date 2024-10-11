@@ -20,7 +20,7 @@ aims to get anyone started with deploying NLP-based tools to research government
 ### [`getting-started-technically`](getting-started-technically)
 Addresses some of the more technical, computery questions you may have while starting your own programming projects, such as
  - how do I install this
- - how do I maybe experiment with this _without_ installing anything (a.k.a. 'what are notebooks'
+ - how do I maybe experiment with this _without_ installing anything (a.k.a. 'what are notebooks' and 'what is colab')
 
 
 ### [`datasets-use`](datasets-use)
