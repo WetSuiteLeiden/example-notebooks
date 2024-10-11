@@ -12,7 +12,7 @@ Start with our curated [crash course](wetsuite-nlp-crash-course/)! This small cr
 aims to get anyone started with deploying NLP-based tools to research governmental documents.
 
 
-## What else can I find here?
+## What can I find here?
 
 ### [`wetsuite-nlp-crash-course`](wetsuite-nlp-crash-course)
 
