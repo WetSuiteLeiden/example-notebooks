@@ -13,7 +13,9 @@ Try to extract various kinds of references, from identifiers to the more natural
 
 ## [find-wetnamen](find-wetnamen)
 Try to find most of the name variations used to refer to each law,
-in part as an example of text pattern matching, in part to extract later (feed to NER training).
+in part as an example of text pattern matching,
+in part as data to give to you,
+in part to extract later (feed to NER training).
 
 ## [investigate-document-structures](investigate-document-structures)
 Trying to inspect
