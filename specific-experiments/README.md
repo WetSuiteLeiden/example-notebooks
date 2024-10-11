@@ -1,5 +1,8 @@
 These experiments set out with a specific goal, and sees how far we get.
 
+Some of them are purely examples, others have led us to improve our code, or provide some data.
+
+
 ## [find-abbreviations](find-abbreviations)
 Trying to find Abbreviations with explanations next to them,
 in part as a classic example,
