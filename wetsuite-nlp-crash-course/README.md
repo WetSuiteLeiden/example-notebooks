@@ -27,3 +27,4 @@ That's great! Some further possibilities to improve your skills are:
 
 - The other notebooks in this repository introduce other NLP techniques, pre-processing steps, specific experiments and other examples. Check them out and get inspired.
 - The free online [Advanced NLP with spaCy course](https://course.spacy.io/en/).
+- [_Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit_](https://www.nltk.org/book/) is a freely available book on natural language processing with NLTK, which is a more academically oriented NLP-toolkit in comparison with spacy.
