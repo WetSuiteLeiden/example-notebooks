@@ -1,5 +1,8 @@
-## Summary before you dive in
+# Research methods
 
+The notebooks in this folder aim to illustrate a few different NLP methods, mostly using [spacy](https://spacy.io/). Spacy is a Python library for Natural Language Processing, with a focus on "doing real work". This distinguishes spacy from the more academically-focused toolkits such as [NLTK](https://www.nltk.org/). 
+
+## Summary before you dive in
 
 ### Using NLP libraries
 
@@ -7,7 +10,7 @@ NLP libraries exist to make mechanical processing of text easier,
 often by splitting things into smaller tasks and assisting each of them.
 
 There are many such libraries, and each has its own way of doing things.
-We give some intrduction, and a number of examples in the one we use for these notebooks, spacy.
+We give some introduction, and a number of examples in the one we use for these notebooks, spacy.
 
 See
 - [methods_nlp__intro_and_nlp_libraries](methods_nlp__intro_and_nlp_libraries.ipynb)

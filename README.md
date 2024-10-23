@@ -1,63 +1,20 @@
-# example-notebooks
+# WetSuite's example-notebooks
 
 This repository contains all example notebooks of the WetSuite project. These example notebooks aim to show you how
 to use the code provided by WetSuite and others to help you leverage NLP tools in legal research.
 
 ## What is WetSuite?
-
+TODO ADD URL TO HOMEPAGE HERE
 
 ## Where should I start?
 
-Start with our curated [crash course](wetsuite-nlp-crash-course/)! This small crash course
-aims to get anyone started with deploying NLP-based tools to research governmental documents.
+**Start with our [WetSuite NLP crash course](wetsuite-nlp-crash-course/)!** This small 3-part crash course aims to get anyone started with deploying NLP-based tools to research governmental documents, regardless of your background or prior experience.
 
+Once you've finished the crash course, be curious and look through all the example we provide here - or that others have made elsewhere online. You can also get in touch via our community [TODO ADD URL HERE]!
 
 ## What can I find here?
 
-### [`wetsuite-nlp-crash-course`](wetsuite-nlp-crash-course)
-
-
-### [`getting-started-technically`](getting-started-technically)
-Addresses some of the more technical, computery questions you may have while starting your own programming projects, such as
- - how do I install this
- - how do I maybe experiment with this _without_ installing anything (a.k.a. 'what are notebooks' and 'what is colab')
-
-
-### [`datasets-use`](datasets-use)
-Primarily some "load a dataset we provide, start doing something with it",
-to show what dealing with data might look like, such as:
-- try to extract definition lists that are used in laws
-- look at the structure of CVDR documents, and extract text _while retaining information about where it came from_ 
-- try to extract information from kansspelautoriteit text
-- try to extract just the "this is what we decided and how" from responses to Woo requests
-
-
-### [`research-methods`](research-methods)
-Examples of how to do certain (tex)t analyses, such as 
- - how to use existing NLP libraries on bare text
- - how to get text out of more and less cooperative PDFs - direct extraction and OCR
- - how to extract interesting information
- - how to extract interesting phrases
- - how to group similar documents
-
-
-### [`specific-experiments`](specific-experiments)
-Some little projects that are not centrally important,
-or examples of methods, 
-but which you may nonetheless find interesting, 
-such as 
-- inspecting documents structure in more detail
-- how do I split up existing documents into parts
-- how do I find legal references in documents
-
-
-### [`notes`](notes)
-Some more technical notes, e.g.
-- more specific details about the structure of certain legal identifiers and references
-- some legal jargon that may be new to linguists; some linguist jargon that may be new to legal students
-- some introduction to XML files
-- some notes on why we provide a 'put files in a datbase-in-a-file' and use it for datasets and in varied examples
-
+Each folder has its own README that clarifies what you can find there. Be sure to browse around!
 
 ## License
 Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
