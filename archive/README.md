@@ -1,3 +1,7 @@
+# Archive
+
+Welcome to the example notebooks archive. Since we've written down quite some things which _may_ be useful for someone, we've decided to leave them online in this archive. Please note however that the contents may be out of date and/or incorrect.
+
 ## notes_jargon
 
 A mix of jargond that might be new to linguistics students, law students, or both.
