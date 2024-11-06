@@ -1,20 +1,23 @@
 # Archive
 
-Welcome to the example notebooks archive. Since we've written down quite some things which _may_ be useful for someone, we've decided to leave them online in this archive. Please note however that the contents may be out of date and/or incorrect.
+Welcome to the example notebooks archive. Since we've written down quite some things which _may_ be useful for someone, 
+but may have gone out of date and/or beome incorrect, 
+we've decided to clearly mark that by leaving them online in this archive.
 
 ## notes_jargon
 
-A mix of jargond that might be new to linguistics students, law students, or both.
+A mix of jargon that might be new to linguistics students, law students, or both.
 
 
 ## notes__legal_identifiers_and_references
 
 More in-depth notes on some of the identifiers and references
-used throughout documents.
+used throughout different kinds of legal documents.
+
 
 ## notes_technical__xml
 
-Introduction to dealing with XML, for those who have not dealt with in python, or at all.
+Introduction to dealing with XML, for those who have not dealt with it in python, or at all.
 
 
 ## notes_technical__localdata
