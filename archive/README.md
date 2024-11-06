@@ -6,17 +6,18 @@ we've decided to clearly mark that by leaving them online in this archive.
 
 ## notes_jargon
 
-A mix of jargond that might be new to linguistics students, law students, or both.
+A mix of jargon that might be new to linguistics students, law students, or both.
 
 
 ## notes__legal_identifiers_and_references
 
 More in-depth notes on some of the identifiers and references
-used throughout documents.
+used throughout different kinds of legal documents.
+
 
 ## notes_technical__xml
 
-Introduction to dealing with XML, for those who have not dealt with in python, or at all.
+Introduction to dealing with XML, for those who have not dealt with it in python, or at all.
 
 
 ## notes_technical__localdata
