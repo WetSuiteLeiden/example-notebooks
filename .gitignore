@@ -14,7 +14,6 @@ coverage.xml
 profile_default/
 ipython_config.py
 
-
-specific-experiments/maybe_never/*
-
 .venv/*
+research-methods/model*
+research-methods/vuur_model*
