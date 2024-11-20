@@ -17,3 +17,4 @@ ipython_config.py
 .venv/*
 research-methods/model*
 research-methods/vuur_model*
+research-methods/mytrain.cfg
