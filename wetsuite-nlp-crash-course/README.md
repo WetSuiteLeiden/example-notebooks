@@ -16,15 +16,15 @@ First of all, you need to have access to a computer with internet access.
 
 The crash course uses the Python programming language, which is the language of choice for NLP-applications in both research and industry. Because prior programming experience is not expected, the course aims to be as accessible as possible. However, as it is not possible to explain everything, the following resources might prove helpful when you get stuck:
 
-- Are some terms unclear? Check the [WetSuite Lexicon](#TODO-ADD-URL-HERE)!
+- Are some terms unclear? Check the [WetSuite Lexicon](https://www.wetsuite.nl/lexicon)!
 - The [documentation of the Python programming language and its standard libraries.](https://docs.python.org/3/), and to get started specifically [The Python Tutorial](https://docs.python.org/3/tutorial/index.html).
 - Online introductory courses on Python, such as [Codecademy's "Learn Python 3" course](https://www.codecademy.com/learn/learn-python-3) or [Kaggle's "Learn Python" course](https://www.kaggle.com/learn/python).
 - Just try and search online for your problem: chances are someone has had a similar problem before and a solution has been found on a Q&A forum such as StackOverflow.
-- Some people (both beginners and professionals) have good experiences with AI tools to assist them in their programming tasks, such as OpenAI's ChatGPT or Microsoft's Copilot. Please be aware however that these tools may give incorrect answers, have huge climate implications, and there can be unresolved copyright issues related to using AI-generated source code. Furthermore, it even in the age of AI-tools, it is a valuable skill to troubleshoot your problem and interpret the documentation yourself.
+- Some people (both beginners and professionals) have good experiences with AI tools to assist them in their programming tasks, such as OpenAI's ChatGPT or Microsoft's Copilot. Please be aware however that these tools may give incorrect answers, have huge climate implications, and there can be unresolved copyright issues related to using AI-generated source code. Furthermore, even in the age of AI-tools, it is a valuable skill to troubleshoot your problem and interpret the documentation yourself.
 
 # I'm done with the crash course and want to learn more!
 That's great! Some further possibilities to improve your skills are:
 
 - The other notebooks in this repository introduce other NLP techniques, pre-processing steps, specific experiments and other examples. Check them out and get inspired.
 - The free online [Advanced NLP with spaCy course](https://course.spacy.io/en/).
-- [_Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit_](https://www.nltk.org/book/) is a freely available book on natural language processing with NLTK, which is a more academically oriented NLP-toolkit in comparison with spacy.
+- [_Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit_](https://www.nltk.org/book/) is a freely available book on natural language processing with NLTK. NLTK is a more academically oriented NLP-toolkit in comparison with spacy.
