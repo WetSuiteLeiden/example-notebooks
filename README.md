@@ -1,10 +1,9 @@
 # WetSuite's example-notebooks
 
-This repository contains all example notebooks of the WetSuite project. These example notebooks aim to show you how
-to use the code provided by WetSuite and others to help you leverage NLP tools in legal research.
+This repository contains all example notebooks of the WetSuite project. These example notebooks aim to show you how to use the code provided by WetSuite and others to help you leverage NLP tools in legal research.
 
 ## What is WetSuite?
-TODO ADD URL TO HOMEPAGE HERE
+Please [check out our website to learn more about WetSuite](https://www.wetsuite.nl/about)!
 
 ## Where should I start?
 
@@ -17,4 +16,6 @@ Once you've finished the crash course, be curious and look through all the examp
 Each folder has its own README that clarifies what you can find there. Be sure to browse around!
 
 ## License
-Available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
+
+
+The content in this repository is available under the European Union Public License v1.2 (EUPL-1.2), or, at your option, any later version.
