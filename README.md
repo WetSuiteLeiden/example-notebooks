@@ -9,7 +9,7 @@ Please [check out our website to learn more about WetSuite](https://www.wetsuite
 
 **Start with our [WetSuite NLP crash course](wetsuite-nlp-crash-course/)!** This small 3-part crash course aims to get anyone started with deploying NLP-based tools to research governmental documents, regardless of your background or prior experience.
 
-Once you've finished the crash course, be curious and look through all the example we provide here - or that others have made elsewhere online. You can also get in touch via our community [TODO ADD URL HERE]!
+Once you've finished the crash course, be curious and look through all the example we provide here - or that others have made elsewhere online. 
 
 ## What can I find here?
 
